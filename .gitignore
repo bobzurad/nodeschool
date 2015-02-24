@@ -1,3 +1,14 @@
+#################### .gitignore from cwcreations ###############################################
+.idea
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+tmp
+.DS_Store
+
+
+#################### default Node .gitignore from GitHub #######################################
 # Logs
 logs
 *.log
