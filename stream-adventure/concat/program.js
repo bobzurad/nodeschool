@@ -3,7 +3,8 @@ var concat = require('concat-stream');
 
 process.stdin
   .pipe(concat(function(buf) {
-    process.stdout.write(buf.toString());
-                            .reverse()
-                            .join());
+    var out = buf.toString().split('').reverse().join('');
+    out += '\n';
+    
+    process.stdout.write(out);
   }));
